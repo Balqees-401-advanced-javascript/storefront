@@ -1,0 +1,25 @@
+{
+  "name": "storefront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Balqees-401-advanced-javascript/storefront.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Balqees-401-advanced-javascript/storefront/issues"
+  },
+  "homepage": "https://github.com/Balqees-401-advanced-javascript/storefront#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0"
+  }
+}
