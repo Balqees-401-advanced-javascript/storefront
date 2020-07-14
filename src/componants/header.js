@@ -9,14 +9,14 @@ function Header(props) {
         <h1>
         Every thing Store
         </h1>
-        <h2>CART ({props.cart})</h2>
+        <h2>CART ({props.cart.cartItem.length})</h2>
       </div>
     </header>
 
   )
 }
 const mapStateToProps = state => ({
-  cart: state.categories.cart
+  cart: state.categories
 });
 
 export default connect(mapStateToProps)(Header);

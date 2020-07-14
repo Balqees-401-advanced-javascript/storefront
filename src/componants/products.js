@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { addItem } from '../Store/categories';
 const Status = props => {
   return (
     <section >
@@ -11,6 +12,8 @@ const Status = props => {
                 <li key={element.name} >
                   {element.name}
                 </li>
+                <button  onClick={() => props.addItem(element.name)} >ADD TO CARE</button>
+                <button>VIEW DETAILS</button>
               </React.Fragment>
             )
           }
@@ -20,9 +23,12 @@ const Status = props => {
     </section>
   );
 }
-// we only care about the totalVotes to be displayed
+
 const mapStateToProps = state => ({
   categories: state.categories
 });
-// connecting my component with the mapState to props to be able to use the store.
-export default connect(mapStateToProps)(Status);
+
+const mapDispatchToProps = { addItem };
+
+export default connect(mapStateToProps, mapDispatchToProps)(Status);
+
